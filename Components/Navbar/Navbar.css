@@ -1,0 +1,241 @@
+
+.navbarContainer {
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 10;
+
+    height: 100px;
+    width: 100%;
+    background-color: #313131;
+    transition: 0.5s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.hamber-menu {
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.search-navbar-icon {
+  height: 50px;
+  position: relative;
+}
+.search-navbar-icon i {
+  color: aliceblue;
+  font-size: 20px;
+  
+}
+.search-navbar-icon i:hover {
+  color: #8dbf35;
+  cursor: pointer;
+}
+
+
+
+.navbar-brand img {
+  width: 215px;
+  height: 67px;
+}
+
+
+
+
+.line-hamber {
+  background: rgb(163, 153, 153);
+  height: 2px;
+  width: 25px;
+  display: block;
+  margin-bottom: 6px;
+  transition: all 0.5s;
+}
+
+.overlay {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 100px;
+  width: 100%;
+  height: 0;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  transition: 0.5s;
+  
+}
+
+.menu-items {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  top: 10%;
+  gap: 30px;
+  font-family: Montserrat;
+
+}
+.menu-items a {
+  text-decoration: none;
+  transition: 0.2s;
+  font-size: 25px;
+  color: #ffffff;
+}
+.menu-items a:hover {
+  color: #8dbf35;
+}
+
+.line-hamber.line-1 {
+  transform: rotate(-45deg) translate(0, 11px);
+  width: 25px;
+}
+.line-hamber.line-3 {
+  transform: rotate(45deg) translate(0, -11px);
+  width: 25px;
+}
+
+.line-hamber.line-2 {
+  opacity: 0;
+}
+
+.linesHamber:hover .line-hamber {
+  background: #8dbf35;
+}
+
+/* -----------------search navbar -------------------*/
+
+.search-navbar-icon {
+  height: 50px;
+  position: relative;
+  transition: all 0.5s;
+  
+}
+
+.search-navbar-icon  button {
+  width: 50px;
+  height: 50px;
+  outline: none;
+  border: none;
+  background: transparent;
+  margin-right: 10px;
+}
+.search-btn-icon i {
+  width: 100%;
+  font-size: 20px;
+  background: transparent;
+
+}
+
+.closeModal{
+
+    display: none;
+    font-size: 30px;
+    color: aliceblue;
+  }
+  .displayCancelIcon{
+    display: block;
+  animation: searchModalOpen .4s forwards ;
+    
+  }
+  button.search-btn-icon i.displaySearchIcon{
+    display: none;
+  animation: searchModalClose .4s forwards ;
+
+  }
+
+
+
+.search-btn-icon:hover {
+  color: #8dbf35;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.inputSearchContainer {
+  display: none;
+  padding: 20px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 80px;
+  right: 10px;  
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 1px solid #8dbf35;
+  animation: searchModalOpen .4s forwards ;
+
+}
+
+
+
+
+.inputSearchContainer input {
+  outline: none;
+  border: 1px solid #ccc;
+  border-right: none;
+  /* transition: all 0.5s; */
+  color: #8dbf35;
+  font-size: 20px;
+  width: 200px;
+  padding: 14.5px;
+
+}
+.inputSearchContainer.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inputSearchContainer.notActive{
+  animation: searchModalClose .4s forwards ;
+
+}
+
+button.search-btn{
+  border: 1px solid #ccc;
+  border-left: none;
+  width: 54px;
+  height: 54px;
+}
+
+button.search-btn:hover{
+  background-color: #8dbf35;
+}
+button.search-btn i {
+  color: #8dbf35;
+}
+button.search-btn:hover i{
+  color: aliceblue;
+}
+
+
+@keyframes searchModalOpen {
+  from {transform: scale(0)}
+  to{transform: scale(1)}
+}
+@keyframes searchModalClose {
+  from {transform: scale(1)}
+  to{transform: scale(0)}
+}
+
+@media screen and  (min-width:1400px) {
+
+}
+
+@media screen and  (max-width:500px) {
+    .navbar-brand img {
+        width: 180px;
+        height: 63px;
+      }
+      .hamber-menu {
+        margin-left: 10px;
+       
+      }
+}
+@media screen and  (max-width:380px) {
+    .navbar-brand img {
+        width: 150px;
+        height: 50px;
+      }
+}

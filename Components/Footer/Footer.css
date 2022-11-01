@@ -1,0 +1,97 @@
+.footer-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/images/back/image-24-2.jpg") center center / cover no-repeat;
+    
+}
+
+.footer-container-fluid{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer.top{
+    max-width:900px ;
+    height: 500px;
+    width: 100%;
+  }
+  .brand-img{
+    text-align: center;
+    padding: 100px 10px 60px 10px;
+  }
+  .brand-img img{
+    width: 230px;
+  }
+  
+  .information{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+    padding-right:0 20px;
+  }
+  .details-info{
+    flex: 1;
+    font-family: Montserrat;
+  }
+  
+  
+  .details-info .icon img{
+    width: 110px;
+    height: 110px;
+  }
+  
+  .details-info .info-item h4{
+    color: aliceblue;
+  }
+  .details-info .info-item p{
+    color: aliceblue;
+    margin-top: 18px;
+    
+  }
+.bottom {
+
+} 
+
+.bottom p{
+    padding: 15px 20px;
+   
+    background-color: rgb(11, 61, 25);
+    text-align: center;
+    color: aliceblue;
+    
+    font-weight: 100;
+    font-family: Montserrat;
+    font-size: 15px;
+    word-wrap: break-word;
+  }
+  .bottom p span{
+    color:#faab34 ;
+  }
+
+  
+  @media screen and (max-width:750px) {
+    .information{
+      grid-template-columns: 1fr;
+  
+    }
+    footer.top{
+      height: auto;
+      padding-bottom: 130px
+    }
+  
+    .details-info .info-item h4{
+     font-size: 15px;
+    }
+    .details-info .info-item p{
+     font-size: 13px;
+      
+    }
+  
+  }

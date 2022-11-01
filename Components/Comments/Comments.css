@@ -1,0 +1,339 @@
+
+/* ----------------------comment slider--------------------------- */
+.all-component-comment{
+    /* overflow: hidden; */
+    width: 100%;
+    position: relative;
+  }
+  .all-component-comment img{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+
+  }
+  
+  .comment-slider-container {
+    /* overflow: hidden; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 0;
+    position: relative;
+  }
+  .comment-slider-container-fluid {
+   
+    max-width: 600px;
+    min-width: 599px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #f8f5f0;
+    border-radius: 99rem;
+    height: 600px;
+    
+  }
+  .comment-container-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40%;
+  }
+  .comment-container-top .Testimonials {
+    font-family: Meddon;
+    color: #faab34;
+  }
+  .comment-container-top .title {
+    color: #1e1e1e;
+    font-family: Montserrat;
+    margin-top: 20px;
+    font-size: 37px;
+    text-align: center;
+  }
+  .comment-container-bottom {
+    position: absolute;
+    max-width: 640px;
+    top: 45%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 20px;
+    width: 100%;
+  }
+  
+  .comment-container-bottom button {
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+    border: none;
+    padding: 20px;
+    background-color: #6dc238;
+    transition: all 0.4s;
+    cursor: pointer;
+  }
+
+  .comment-container-bottom button:focus{
+    border: none;
+    outline: none;
+  }
+
+  .comment-container-bottom button.next {
+    right: 0;
+  }
+  .comment-container-bottom button.prev {
+    left: 0%;
+  }
+  .comment-container-bottom button i {
+    font-size: 18px;
+    color: #f8f5f0;
+    transition: all 0.4s;
+  }
+  
+  .comment-slider-container-fluid:hover ~ .comment-container-bottom button.next {
+    transform: translateX(10px);
+  }
+  .comment-slider-container-fluid:hover ~ .comment-container-bottom button.prev {
+    transform: translateX(-10px);
+  }
+  
+  .comment-container-bottom button.next:hover {
+    transform: translateX(10px);
+    background-color: #ffffff;
+  }
+  
+  .comment-container-bottom button.prev:hover {
+    transform: translateX(-10px);
+    background-color: #ffffff;
+  }
+  .comment-container-bottom button.next:hover i {
+    animation: moveNext 0.6s infinite alternate;
+    color: #6dc238;
+  }
+  .comment-container-bottom button.prev:hover i {
+    animation: movePrev 0.6s infinite alternate;
+    color: #6dc238;
+  }
+  @keyframes moveNext {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(5px);
+    }
+  }
+  @keyframes movePrev {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-5px);
+    }
+  }
+  
+  .comment-content {
+    display: none;
+    min-width: 450px;
+    height: 100%;
+    padding: 40px;
+    text-align: center;
+    font-family: Montserrat;
+    transition: all 0.4s;
+  }
+  .comment-content .comment {
+    color: #b2aaaa;
+    font-size: 18px;
+    line-height: 1.8;
+    transition: all 0.4s;
+    min-height: 200px;
+    /* opacity: 0; */
+  }
+  .opacity {
+    animation: opacity 0.5s forwards;
+  }
+  @keyframes opacity {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .comment-content .person-tell {
+    margin-top: 50px;
+    text-align: center;
+    color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+  }
+  .person-tell p {
+    color: #b2aaaa;
+  }
+  
+  .comment-content.display {
+    display: block;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .comment-slider-container {
+      padding: 100px 0;
+    }
+    .comment-slider-container-fluid {
+      max-width: 500px;
+      min-width: 499px;
+      border-radius: 50%;
+    }
+  
+    .comment-content {
+      min-width: 350px;
+    }
+    .comment-container-bottom button.next {
+      right: 6%;
+    }
+    .comment-container-bottom button.prev {
+      left: 6%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .comment-slider-container {
+      padding: 100px 0;
+    }
+    .comment-slider-container-fluid {
+      max-width: 400px;
+      min-width: 399px;
+      /* border-radius: 50px; */
+    }
+    .comment-container-bottom button {
+      padding: 15px;
+    }
+    .comment-content {
+      min-width: 300px;
+    }
+  
+    .comment-container-top .Testimonials {
+      font-size: 20px;
+    }
+    .comment-container-top .title {
+      font-size: 30px;
+    }
+    .comment-container-bottom button.next {
+      right: 12%;
+    }
+    .comment-container-bottom button.prev {
+      left: 12%;
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .comment-slider-container {
+      padding: 100px 0;
+    }
+    
+    .comment-slider-container-fluid {
+      max-width: 400px;
+      min-width: 399px;
+      /* border-radius: 50px; */
+    }
+  
+    .comment-content {
+      min-width: 300px;
+      padding: 20px;
+   
+    }
+    .comment-content .comment {
+      font-size: 13px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+    }
+    .person-tell  {
+      font-size: 15px;
+      margin-top: 20px;
+      margin-top: 0;
+  
+    }
+    .comment-container-bottom button.next {
+      right: 8%;
+    }
+    .comment-container-bottom button.prev {
+      left: 8%;
+    }
+  }
+  @media screen and (max-width: 530px) {
+    .comment-container-bottom button.next {
+      right: 3%;
+    }
+    .comment-container-bottom button.prev {
+      left: 3%;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .comment-slider-container-fluid {
+        max-width: 330px;
+        min-width: 329px;
+      }
+    .comment-container-bottom button.next {
+      right: 4%;
+    }
+    .comment-container-bottom button.prev {
+      left: 4%;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .comment-container-bottom button.next {
+      right: 1%;
+    }
+    .comment-container-bottom button.prev {
+      left: 1%;
+    }
+  }
+  
+  @media screen and (max-width: 410px) {
+    .comment-slider-container-fluid {
+      max-width: 250px;
+      min-width: 249px;
+    }
+    .comment-container-top .Testimonials {
+      font-size: 18px;
+    }
+    .comment-container-top .title {
+      font-size: 22px;
+    }
+  
+    .comment-container-bottom button {
+      padding: 12px;
+    }
+    .comment-container-bottom button i{
+      font-size: 13px;
+    }
+  
+      .comment-container-bottom button.next {
+        right: 8%;
+      }
+      .comment-container-bottom button.prev {
+        left: 8%;
+      }
+    
+  }
+  
+  @media screen and (max-width: 390px) {
+    .comment-container-bottom button.next {
+      right: 5%;
+    }
+    .comment-container-bottom button.prev {
+      left: 5%;
+     
+    }
+    .comment{
+      padding: 20px;
+    }
+  }
+  

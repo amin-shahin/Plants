@@ -1,0 +1,72 @@
+
+
+.we-are-with-heart-container{
+    display: flex;
+    font-family: Montserrat;
+    background-color: #0B3D19;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    padding:70px 20px;
+    overflow: hidden;
+}
+
+.content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+.content img{
+    width: 200px;
+    justify-self: center;
+   
+}
+.box-text a{
+    text-decoration: none;
+    font-family: Montserrat;
+    color: #489f10;
+}
+.box-text a i {
+    transition:transform .4s ;
+    font-size: 15px;
+  
+  }
+  .box-text a:hover i {
+    transform: translateX(5px);
+  }
+  .box-text a:hover{
+    color: #faab34;
+  
+  }
+
+  .flower{
+    border-radius: 20% 70% 20% 45%;
+    position: absolute;
+    top: 10px;
+    right: -80px;
+    z-index: 2;
+  }
+
+  @media screen and (max-width:1000px) {
+    .content{
+        grid-template-columns: 1fr 1fr ;
+        justify-content: space-around;
+        row-gap: 60px;
+    }
+    .flower{
+        display: none;
+    }
+  }
+
+  @media screen and (max-width:700px) {
+    .content{
+        grid-template-columns: 1fr ;
+
+    }
+  }

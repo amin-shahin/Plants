@@ -1,0 +1,74 @@
+.support-your-garden-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/images/back/home-3_04.jpg) center center / cover fixed no-repeat;
+    
+  }
+  .support-your-garden-container-fluid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    color: #ffffff;
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    
+  }
+  .support-your-garden-container-fluid h2{
+    font-family: Meddon;
+   
+    font-weight: 200;
+    font-size: 30px;
+    width: 100%;
+    
+  }
+  .support-your-garden-container-fluid h1{
+    max-width: 700px;
+    text-align: center;
+    font-size: 54px;
+  
+  }
+  .support-your-garden-container-fluid a{
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 20px 30px;
+   background: transparent; 
+   transition:all .4s ;
+   color: #ffffff;
+   border: 1px solid #c4bfbf;
+   font-weight: bold;
+   
+   text-align: center;
+  }
+  .support-your-garden-container-fluid a:hover{
+    background-color: #faab34;
+  }
+
+  @media screen and (max-width:750px) {
+
+    .support-your-garden-container-fluid h1{
+        font-size: 35px;
+        margin: 0;
+    }
+    .support-your-garden-container-fluid h2{
+        font-size: 25px;
+      
+    }
+    .support-your-garden-container-fluid a{
+        font-size: 13px;
+        margin-top: 40px;
+    }
+  }
+
+  @media screen and (max-width:550px) {
+    .support-your-garden-container-fluid h2{
+        font-size: 22px;
+      
+    }
+    .support-your-garden-container-fluid{
+        padding: 0 20px;
+    }
+  }

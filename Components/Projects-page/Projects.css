@@ -1,0 +1,190 @@
+.categories-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* ---------------heading --------------- */
+
+.heading .head-text{
+    font-family: Meddon;
+    color: #faab34;
+    font-weight: 200;
+}
+
+.heading .title-text{
+    font-family: Montserrat;
+    color: #1e1e1e;
+
+}
+.heading .main-text{
+    color: #616161;
+    font-family: Montserrat;
+    padding:10px 40px;
+    max-width: 550px;
+    line-height: 1.8;
+}
+/* ------------------------categories---------------------- */
+
+.categories .item{
+    font-family: Montserrat;
+    padding:5px 10px;
+    margin: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all .5s;
+    cursor: pointer;
+   
+    
+}
+.categories .item:hover{
+    color: #ffffff;
+    background:#489F10;
+}
+
+.active{
+    background: #489F10;
+    color: #ffffff;
+}
+
+
+
+
+/* ------------------project-component-container ---------------*/
+.project-component-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 40px;
+    gap: 30px;
+    
+}
+card-component-project.hide{
+    display: none;
+}
+
+
+card-component-project.show{
+    animation: show .7s forwards ;
+}
+
+@keyframes show {
+    from{transform:scale(0.6) ;
+    opacity: .1;
+    
+    }
+    to{transform: scale(1) ;
+    opacity: 1;
+    
+
+}
+}
+
+div.card-container div.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.card-container div.img{
+    position: relative;
+    overflow: hidden;
+}
+.card-container{
+    position: relative;
+    font-family: Montserrat;
+}
+ .overlay h2{
+    color: #ffffff;
+    padding-bottom: 10px;
+    transition: all .6s;
+}
+
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 99%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    
+    background:linear-gradient(to top,rgba(0,0,0,0.5),rgba(0,0,0,0.01));
+    z-index: 2;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+  }
+
+  .overlay .btns{
+    transition: all .3s;
+    display: flex;
+    gap:10px
+
+  }
+
+.overlay .btns a{
+    text-decoration: none;
+    padding: 6px;
+    background-color: #faab34;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: bolder;
+    color: aliceblue;
+    transition: all .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .overlay-btn-slot{
+    
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #faab34;
+    transition: all .5s;
+    padding: 6px;
+  }
+
+.overlay .btns a:hover,
+.overlay-btn-slot:hover{
+    background-color: #8EC135;
+  }
+
+  .overlay:hover h2,
+  .overlay:hover .btns{
+    transform: translateY(-40px);
+}
+
+@media screen and (max-width:900px) {
+    .project-component-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .project-component-container{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+
+    .categories .item{
+        display: inline-block;
+    }
+}

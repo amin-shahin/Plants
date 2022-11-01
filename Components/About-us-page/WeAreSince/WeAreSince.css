@@ -1,0 +1,284 @@
+.since-container-fluid {
+    /* width: 100%; */
+    /* padding: 0 20px; */
+}
+
+div.since-container {
+    max-width: 1500px;
+    margin: auto;
+    background-color: #FFFFFF;
+    padding: 40px;
+    overflow: hidden;
+}
+
+div.since-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    justify-content: center;
+    /* width: 100%; */
+    
+  }
+  .since-left-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+  
+    
+  }
+  .wrap-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrap-img .left,.wrap-img .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .wrap-img .left img{
+    padding: 5px;
+    width: 97%;
+    height: 97.5%;
+    object-fit: cover;
+  }
+ 
+  .wrap-img .right img{
+    padding: 5px;
+    height: 97.5%;
+
+  }
+  .since-right-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+  }
+  .since-right-text span.title{
+    display: flex;
+    align-items: center;
+  }
+  .since-right-text h3 {
+    font-size: 30px;
+    color: #faab34;
+    font-family: Meddon;
+    font-weight: 300;
+    margin-left: 20px;
+  }
+  .since-right-text h1 {
+    font-size: 40px;
+    color: #1e1e1e;
+    margin-top: 8px;
+    font-family: Montserrat;
+    font-weight: 600;
+  }
+  
+  .since-right-text p {
+    color: #616161;
+    margin-top: 30px;
+    font-family: Nunito Sans;
+    word-wrap: break-word;
+    line-height: 2;
+  }
+  .avatar-since{
+    width: 100%;
+    display: flex;
+
+  }
+  .details{
+    display: flex;
+    font-family: Montserrat; 
+    justify-content: start;
+    align-items: center;
+    margin-right: 60px;
+    
+  }
+  .details img{
+    object-fit: contain;
+    margin-right:20px;
+  }
+  .details span.info h4.name{
+    font-weight: bolder;
+    transition: all .5s;
+    margin: 10px 0;
+  }
+
+  .details span.info h5.sub{
+    font-weight: 100;
+    color: #616161;
+    margin: 0;
+
+    
+  } 
+  .details span.info h4.name:hover{
+    color: #48A264;
+    
+  }
+  .details img{
+    width: 60px;
+  }
+  img.sign{
+    width: 140px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    div.since-main {
+        grid-template-columns:1fr;
+      }
+    .since-right-text h3 {
+      font-size: 25px;
+    }
+    .since-right-text h1 {
+      font-size: 40px;
+      margin-top: 5px;
+      text-align: start;
+    }
+    .since-right-text p {
+      font-size: 16px;
+      text-align: start;
+
+    }
+    .details span.info{
+      text-align: start;
+
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .since-right-text h3 {
+      font-size: 20px;
+    }
+    .since-right-text h1 {
+      font-size: 28px;
+      margin-top: 0;
+      font-weight: 600;
+
+    }
+    .since-right-text p {
+      font-size: 14px;
+    }
+
+  }
+  @media screen and (max-width: 700px) {
+
+    div.since-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        width:calc(100% - 80px);
+    }
+
+    
+    .wrap-img .left img{
+       width: 250px;
+      }
+      .wrap-img .right img{
+       width: 250px;
+    
+      }
+      .since-right-text span.title img{
+        width: 40px;
+      }
+
+  }
+  @media screen and (max-width: 600px) {
+    .wrap-img .left img{
+        width: 200px;
+       }
+       .wrap-img .right img{
+        width: 200px;
+     
+       }
+       .avatar-since{
+        justify-content: space-between;
+       }
+       .details{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+       }
+       .details .info .sub{
+        width: 150px;
+       }
+       img.sign{
+        width: 140px;
+        height: 60px;
+        align-self: flex-end;
+      }
+      .avatar-since{
+        display: flex;
+        align-items: center;
+      }
+  }
+  @media screen and (max-width: 500px) {
+    .since-right-text h3 {
+        font-size: 20px;
+      }
+      .since-right-text h1 {
+        font-size: 20px;
+
+      }
+      .since-right-text span.title img{
+        width: 30px;
+      }
+
+    .wrap-img{
+        width: 400px;
+    }
+    .since-right-text h1 {
+  
+        margin-bottom: 5px;
+    }
+    .wrap-img .left img{
+        width: 170px;
+       }
+       .wrap-img .right img{
+        width: 170px;
+     
+       }
+
+  }
+  @media screen and (max-width:400px) {
+    .since-right-text{
+        width: 350px;
+    }
+  .wrap-img .left img{
+    width: 150px;
+   }
+   .wrap-img .right img{
+    width: 150px;
+ 
+   }
+}
+
+@media screen and (max-width: 380px) {
+  
+       .since-right-text .title{
+        padding: 0 20px;
+
+       }
+       .since-right-text h1{
+        padding: 0 20px;
+       }
+        .since-right-text p {
+          line-height: 1.3;
+          margin-top: 15px;
+          padding:0 20px;
+        }
+
+        .details{
+            margin-right: 0px;
+        }
+        .avatar-since{
+          padding:0 20px;
+
+        }
+  }
+ 

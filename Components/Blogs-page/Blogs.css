@@ -1,0 +1,215 @@
+/* ------------------------------------------------ */
+.blogs-container{
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f5f0;
+
+}
+.blogs-container .blogs-container-fluid {
+    padding: 50px;
+    display: flex;
+    /* width: 100%; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  .blogs-container-fluid{
+    max-width: 1500px;
+
+  }
+  /* --------------------bottom news section */
+
+
+
+  .news-bottom-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+  .news-bottom {
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)); */
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+  }
+  .news-bottom::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5));
+   z-index: 2;
+
+  }
+  .bg-card{
+
+  }
+  .news-bottom .bg-card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    z-index: 1;
+
+  }
+  .text-container{
+    z-index: 3;
+  }
+  .main-box .bg-img {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 170px;
+  }
+  div.card {
+    position: relative;
+  }
+  .news-bottom-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: aliceblue;
+    transition: all 0.4s;
+    opacity: 0;
+    z-index: 4;
+  }
+  
+  .news-bottom-overlay:hover {
+    opacity: 1;
+  }
+  .news-bottom-overlay .footer-box span a {
+    color: #6dc238;
+  }
+  .news-bottom-overlay .main-box .text-container .title,
+  .news-bottom-overlay .text-container .text,
+  .news-bottom-overlay:hover .text-container .text {
+    color: #1e1e1e;
+  }
+  .news-bottom-overlay .main-box .text-container .title:hover {
+    color: #6dc238;
+  }
+  .news-bottom-overlay .main-box .text-container .text {
+    opacity: 0;
+    line-height: 2;
+    transition: all 2s;
+  }
+  .news-bottom-overlay:hover .main-box .text-container .text {
+    opacity: 1;
+  }
+  
+  .footer-box {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #c4bdbd;
+    z-index: 3;
+    font-family: Montserrat;
+    padding: 15px;
+    justify-content: center;
+  }
+  
+  .footer-box span a {
+    color: #ffffff;
+    font-weight: bolder;
+  }
+  .main-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1;
+    position: relative;
+    padding: 40px;
+    font-family: Montserrat;
+    /* background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.03) ,rgba(0, 0, 0, 0.5)); */
+  }
+  
+  .main-box .text-container .title,
+  .main-box .text-container .text {
+    margin-bottom: 20px;
+    color: #ffffff;
+    word-wrap: break-word;
+  }
+  .main-box button {
+    border: none;
+    padding: 5px 10px;
+    background-color: #faab34;
+    color: #ffffff;
+    transition: all 0.4s;
+    z-index: 3;
+    cursor: pointer;
+  }
+  .main-box button:hover {
+    background-color: #6dc238;
+  }
+  
+  .main-box .title {
+    transition: all 0.4s;
+    z-index: 3;
+    cursor: pointer;
+  }
+  .main-box .title:hover {
+    color: #6dc238;
+  }
+  .main-box .text {
+    font-size: 14px;
+    z-index: 3;
+  }
+  .footer-box img.avatar {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .footer-box span.date {
+    color: #c4bdbd;
+  }
+
+  .load-more  {
+    border: none;
+    padding: 20px 35px;
+    background-color: #489f10;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    transition: all 0.4s;
+    border-radius: 3px;
+    margin: 80px 0;
+  }
+  .load-more:hover {
+    background-color: #faab34;
+  }
+  
+@media screen and (max-width:1200px) {
+    .news-bottom-container {
+        grid-template-columns: 1fr 1fr;
+    
+      }
+}
+
+@media screen and (max-width:800px) {
+    .news-bottom-container {
+        grid-template-columns: 1fr ;
+      }
+}

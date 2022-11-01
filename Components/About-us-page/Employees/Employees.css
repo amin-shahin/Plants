@@ -1,0 +1,347 @@
+
+.perfect-stuff-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f5f0;
+}
+.perfect-stuff-container .perfect-stuff-container-fluid {
+    max-width: 1500px;
+    padding: 50px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .perfect-stuff-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  
+  .perfect-stuff-top .text {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+  .perfect-stuff-top .text span {
+    display: flex;
+    align-items: center;
+    font-family: Meddon;
+    color: #faab34;
+    margin-bottom: 20px;
+  }
+  .perfect-stuff-top .text span {
+    height: 40px;
+  }
+  .perfect-stuff-top .text span h3 {
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 100;
+  }
+  .perfect-stuff-top .lastest-perfect-stuff {
+    font-family: Montserrat;
+    letter-spacing: 1px;
+  }
+  
+  .more-perfect-stuff-btn button {
+    border: none;
+    padding: 20px 35px;
+    background-color: #489f10;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    transition: all 0.4s;
+    border-radius: 3px;
+  }
+  .more-perfect-stuff-btn button:hover {
+    background-color: #faab34;
+  }
+
+  /* --------------component--------------------- */
+
+  .card-employee{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+    background: #ffffff;
+    position: relative;
+    transition: all .5s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  }
+  .employee-img{
+    width: 100%;
+    position: relative;
+    transition: all .5s;
+    overflow: hidden;
+  }
+  .employee-img img{
+    width: 100%;
+  }
+  .employee-img .plus-icon{
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #489f10;
+    color: #ffffff;
+    font-size: 14px;
+    z-index: 2;
+    font-size: 20px;
+  }
+
+  .a-icon{
+    position: absolute;
+    left: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #489f10;
+    color: #ffffff;
+    font-size: 14px;
+    z-index: 2;
+    opacity: 0;
+    transition: all .4s;
+    cursor: pointer;
+  }
+
+  .opacity-1 {
+    animation: opacity-1 0.5s forwards;
+  }
+  @keyframes opacity-1 {
+    from {
+      opacity: 0;
+      transform: translateX(15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+
+    }
+  }
+
+  .opacity-remove-1 {
+    animation: opacity-remove-1 .8s .15s forwards;
+  }
+  @keyframes opacity-remove-1 {
+      from {
+        opacity: 1;
+        transform: translateX(0);
+  
+      }
+    to {
+      opacity: 0;
+      transform: translateX(15px);
+    }
+  }
+
+
+  .opacity-2 {
+    animation: opacity-2 0.5s .05s forwards;
+  }
+  @keyframes opacity-2 {
+    from {
+      opacity: 0;
+      transform: translateX(15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+
+    }
+  }
+
+  .opacity-remove-2 {
+    animation: opacity-remove-2 0.8s .1s forwards;
+  }
+  @keyframes opacity-remove-2 {
+      from {
+        opacity: 1;
+        transform: translateX(0);
+  
+      }
+    to {
+      opacity: 0;
+      transform: translateX(15px);
+    }
+  }
+
+  .opacity-3 {
+    animation: opacity-3 0.5s .1s forwards;
+  }
+  @keyframes opacity-3 {
+    from {
+      opacity: 0;
+      transform: translateX(15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+
+    }
+  }
+
+  .opacity-remove-3 {
+    animation: opacity-remove-3 0.8s .05s  forwards;
+  }
+  @keyframes opacity-remove-3 {
+      from {
+        opacity: 1;
+        transform: translateX(0);
+  
+      }
+    to {
+      opacity: 0;
+      transform: translateX(15px);
+    }
+  }
+
+  .opacity-4 {
+    animation: opacity-3 0.5s .15s forwards;
+  }
+  @keyframes opacity-3 {
+    from {
+      opacity: 0;
+      transform: translateX(15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+
+    }
+  }
+
+  .opacity-remove-4 {
+    animation: opacity-remove-4 0.8s  forwards;
+  }
+  @keyframes opacity-remove-4 {
+      from {
+        opacity: 1;
+        transform: translateX(0);
+  
+      }
+    to {
+      opacity: 0;
+      transform: translateX(15px);
+    }
+  }
+
+  .a-icon a i{
+    color: #ffffff;
+  }
+
+  .b-icon{
+    top: 40px;
+  }
+  .b-icon:hover{
+    background-color: #1DA1F2;
+  }
+  .c-icon{
+    top: 80px;
+  }
+  .c-icon:hover{
+  background-color: #0E61EA ;
+  }
+
+  .d-icon{
+    top: 120px;
+  }
+  .d-icon:hover{
+    background-color:#d3586a ;
+   
+  }
+  
+  .f-icon{
+    top: 160px;
+  }
+  .f-icon:hover{
+    background-color:orange  }
+
+  .employee-img:hover img {
+    transform: scale(1.1);
+  }
+  
+
+  .employee-img img{
+    transition: all .5s;
+    /* width: 300px; */
+    object-fit: cover;
+  }
+
+  .employee-name{
+    letter-spacing: 1px;
+  }
+
+  .card-employee span{
+    color: #489f10;
+    padding-bottom: 20px;
+  }
+
+  @media screen and (max-width:800px) {
+   .text span h3{
+      font-size: 25px;
+    }
+   .text span img{
+      width:40px ;
+    }
+   .text h1{
+      font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width:600px) {
+    .perfect-stuff-top{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .perfect-stuff-top button{
+      margin-top: 30px;
+    }
+
+    .perfect-stuff-top .text span h3{
+       font-size: 25px;
+     }
+     .perfect-stuff-top .text span img{
+       width:40px ;
+     }
+    .text h1{
+       font-size: 20px;
+     }
+   }
+
+   @media screen and (max-width:440px) {
+    .perfect-stuff-top .text span h3{
+      font-size: 20px;
+    }
+    .perfect-stuff-top .text span img{
+      width:30px ;
+    }
+   }
+   @media screen and (max-width:360px) {
+    .perfect-stuff-top .text span h3{
+      font-size: 16px;
+    }
+    .text h1{
+      font-size: 18px;
+    }
+   }

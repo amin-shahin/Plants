@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <title>Shop</title>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"  href="./shop/shop.css"/>
+    <link rel="stylesheet"  href="./style.css"/>
+</head>
+<body>
+
+    <div class="container-all-components">
+      
+        <navbar-site></navbar-site>
+  
+        <navbar-xxl-another-page></navbar-xxl-another-page>
+
+        <header-another-page cover="../images/shop/shop_page-title.jpg" header-title="Shop" bread-one="HOME" bread-two="SHOP"></header-another-page>
+
+
+        
+  <div class="shop-page-container">
+    <div class="shop-page-container-fluid">
+        <div class="grid-display">
+
+            <!------------------- shop cart in shop page--- start------ -->
+                <div class="sidebar-shop">
+                    <div class="title-shop-div">
+                        <h3 class="title-shop">PRICE RANGE</h3>
+                    </div>
+                    <div class="categories">
+
+                        <div class="wrapper">
+                           
+
+                            <div class="slider-range">
+                              <div class="progress"></div>
+                            </div>
+                            <div class="range-input">
+                              <input type="range" class="range-min" min="0" max="50" value="0" step="1">
+                              <input type="range" class="range-max" min="0" max="50" value="50" step="1">
+                            </div>
+
+                            <div class="price-input">
+                                <button class="filter">Filter</button>
+                                <div class="inputs-container">
+                                  <div class="field">
+                                      <h4>Price :</h4>
+                                      $&nbsp;<input type="number" class="input-min" value="0">
+                                      </div>
+                                      <div class="separator">-</div> 
+                                  <div class="field">
+                                    $&nbsp;<input type="number" class="input-max" value="50">
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="alert-price">SORRY! <br/> IN RANGE PRICE IS NOT EXIST PRODUCT </div>
+                          </div>
+                    </div>
+
+                    <div class="title-shop-div">
+                        <h3 class="title-shop">BESTSELLERS</h3>
+                    </div>
+                    <div class="best-sellers">
+
+                    </div>
+
+                    <div class="title-shop-div">
+                        <h3 class="title-shop">SHOPPING CART</h3>
+                    </div>
+                    <div class="shop-cart-sidebar">
+                    </div>
+                    <div class="sub-total-price">
+                        <h4>Subtotal : $ 0</h4>
+                    </div>
+                    <div class="btns-cart">
+                        <button class="cart-btn">VIEW CART</button>
+                        <button class="cart-btn">CHECK OUT</button>
+                    </div>
+                </div>
+
+
+                <div class="products"> </div>
+            <!--------------- shop cart in shop page --- end ------------------->
+
+            <div class="tooltip">
+                <h5>Success Add To Cart</h5>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+        
+        
+        <footer-site></footer-site>
+              
+        <footer class="bottom">
+          <p>Copyright © 2022 Garderia by <span>Amin Shahin</span>. All Rights Reserved</p>
+      </footer>
+
+    </div>
+
+
+
+  
+ 
+    <script  src="./shop/data.js"></script>
+    <script  src="./shop/shop.js"></script>
+    <script  src="./shop/priceRangeFiltered.js"></script>
+    <script type="module" src="./javascript.js"></script>
+</body>
+</html>
